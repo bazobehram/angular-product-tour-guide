@@ -1,0 +1,79 @@
+ /* Include your SCSS (Sass) code here */
+        /* Define variables, nesting, and styling as needed */
+
+        /* Define variables */
+        $primary-color: #3498db;
+        $secondary-color: #e74c3c;
+
+        /* Nesting and styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: $primary-color;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tour-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                border-radius: 5px;
+            }
+
+            h2 {
+                color: $primary-color;
+                margin-top: 10px;
+            }
+
+            p {
+                margin-top: 10px;
+                color: #555;
+            }
+
+            .cta-button {
+                background-color: $secondary-color;
+                color: white;
+                padding: 10px 20px;
+                margin-top: 15px;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($secondary-color, 10%);
+                }
+            }
+        }
+
+        footer {
+            background-color: $primary-color;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }

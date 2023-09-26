@@ -1,0 +1,97 @@
+/* Include your SCSS (Sass) code here */
+/* For example, you can define variables, nesting, etc. */
+
+/* Define variables */
+$primary-color: #4caf50;
+$secondary-color: #e74c3c;
+
+/* Nesting and styling */
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.promo-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  img {
+    max-width: 50%;
+    margin-right: 20px;
+  }
+
+  .promo-details {
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      background-color: $secondary-color;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+}
+
+.booking-section {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .cta-button {
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,69 @@
+<header>
+  <h1>Welcome to Our Exclusive Promotion Tour!</h1>
+</header>
+
+<main>
+  <section class="promo-section">
+    <img [src]="img[0]" alt="Promotion Tour Image" />
+    <div class="promo-details">
+      <h2>Discover Paradise</h2>
+      <p>
+        Join us for an unforgettable journey to a tropical paradise. Relax on
+        pristine beaches, explore lush jungles, and savor delicious local
+        cuisine.
+      </p>
+      <p>Book now and get 20% off your trip!</p>
+      <a class="cta-button">Book Now</a>
+    </div>
+  </section>
+
+  <section class="promo-section">
+    <img [src]="img[1]" alt="Exploration Image" />
+    <div class="promo-details">
+      <h2>Adventure Awaits</h2>
+      <p>
+        Embark on thrilling adventures, from hiking to zip-lining. Our expert
+        guides will ensure you have a safe and exhilarating experience.
+      </p>
+      <p>Don't miss out on this amazing opportunity!</p>
+      <a class="cta-button">Book Now</a>
+    </div>
+  </section>
+
+  <section class="promo-section">
+    <img [src]="img[2]" alt="Luxury Accommodation Image" />
+    <div class="promo-details">
+      <h2>Luxury Stay</h2>
+      <p>
+        Indulge in luxury accommodations with stunning ocean views. Enjoy spa
+        treatments, gourmet dining, and personalized service.
+      </p>
+      <p>Your dream vacation awaits you!</p>
+      <a class="cta-button">Book Now</a>
+    </div>
+  </section>
+</main>
+
+<section id="booking" class="booking-section">
+  <h2>Book Your Adventure Today!</h2>
+  <p>
+    Fill out the form below to reserve your spot on our exclusive promotion
+    tour. Don't miss this opportunity of a lifetime!
+  </p>
+  <form action="submit_booking.php" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <button type="submit" class="cta-button">Submit Booking</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2023 Fake Promotion Tours. All rights reserved.</p>
+</footer>
